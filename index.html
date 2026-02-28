@@ -1,41 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prueba 1</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Dakar IT | Infraestructura y Ciberseguridad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dakar IT integra ciberseguridad, infraestructura TI y servicios administrados para empresas medianas y grandes.">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Pagina Principal</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="segunda.html">Segunda</a>
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="container nav">
+    <div class="logo">DAKAR IT</div>
+
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Cómo trabajamos</a>
+      <a href="#partners">Partners</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-  </header>
 
-  <main class="card">
-    <h2>Prueba de Interaccion</h2>
+    <a href="#contacto" class="btn btn-primary">Agendar diagnóstico</a>
+  </div>
+</header>
 
-    <input id="texto" placeholder="Escribe algo..." />
-    <button id="btn">Mostrar</button>
 
-    <p id="resultado">Aqui aparecera el texto</p>
-  </main>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
 
-  <footer>
-    <small>Pruebas HTML basicas</small>
-  </footer>
+    <div>
+      <h1>Seguridad y continuidad para tu operación TI</h1>
+      <p>
+        Integramos ciberseguridad, infraestructura y servicios administrados
+        para empresas que necesitan disponibilidad, control y respuesta rápida.
+      </p>
 
-  <script>
-    document.getElementById("btn").addEventListener("click", function() {
-      const valor = document.getElementById("texto").value;
-      document.getElementById("resultado").textContent =
-        "Escribiste: " + (valor || "(vacio)");
-    });
-  </script>
+      <a href="#contacto" class="btn btn-primary">Solicitar diagnóstico</a>
+    </div>
+
+    <div class="hero-image">
+      <!-- REEMPLAZAR POR TU IMAGEN -->
+      <img src="images/hero.jpg" alt="Infraestructura y ciberseguridad Dakar IT">
+      <div class="hero-overlay"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios">
+  <div class="container">
+
+    <h2>Un solo partner. Cuatro frentes críticos.</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Ciberseguridad</h3>
+        <p>Protección avanzada para endpoints, redes y datos críticos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Infraestructura TI</h3>
+        <p>Arquitectura resiliente, conectividad y modernización híbrida.</p>
+      </div>
+
+      <div class="card">
+        <h3>Servicios Administrados</h3>
+        <p>Operación continua con SLA, monitoreo y reportes ejecutivos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cloud & Monitoreo</h3>
+        <p>Observabilidad, optimización de costos y continuidad operativa.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= MÉTRICAS ================= -->
+<section class="metrics">
+  <div class="metric">
+    <h2>+15</h2>
+    <span>Años de experiencia</span>
+  </div>
+
+  <div class="metric">
+    <h2>24/7</h2>
+    <span>Monitoreo continuo</span>
+  </div>
+
+  <div class="metric">
+    <h2>SLA</h2>
+    <span>Operación garantizada</span>
+  </div>
+</section>
+
+
+<!-- ================= PARTNERS ================= -->
+<section id="partners" class="trust">
+  <div class="container">
+
+    <h2 style="text-align:center; margin-bottom:40px;">
+      Trabajamos con los mejores
+    </h2>
+
+    <div class="trust-logos">
+      <!-- REEMPLAZAR POR LOGOS REALES -->
+      <img src="images/microsoft.png" alt="Microsoft">
+      <img src="images/sophos.png" alt="Sophos">
+      <img src="images/dell.png" alt="Dell">
+      <img src="images/cyberark.png" alt="CyberArk">
+      <img src="images/checkpoint.png" alt="Check Point">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CTA FINAL ================= -->
+<section id="contacto" class="cta">
+  <div class="container">
+    <div class="cta-box">
+
+      <h2>¿Quieres conocer tu nivel de riesgo tecnológico?</h2>
+      <p>
+        Agenda una sesión de diagnóstico donde identificaremos brechas,
+        prioridades y oportunidades de mejora para tu infraestructura.
+      </p>
+
+      <a href="#" class="btn btn-primary">Agendar diagnóstico</a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    © 2026 Dakar IT. Todos los derechos reservados.
+  </div>
+</footer>
+
 
 </body>
 </html>
