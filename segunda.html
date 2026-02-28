@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prueba 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Segunda Pagina</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="segunda.html">Segunda</a>
+    </nav>
+  </header>
+
+  <main class="card">
+    <h2>Formulario de prueba</h2>
+
+    <form id="formulario">
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Email" required />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensaje"></p>
+  </main>
+
+  <script>
+    document.getElementById("formulario").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("mensaje").textContent =
+        "Formulario enviado correctamente ✔";
+    });
+  </script>
+
+</body>
+</html>
